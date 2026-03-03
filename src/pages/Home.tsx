@@ -23,7 +23,7 @@ export default function Home() {
             style={{ y, scale: 1.1 }}
             src="https://i.postimg.cc/4NLtXpPY/image.png" 
             alt="Corte de Jamón" 
-            className="w-full h-full object-cover grayscale"
+            className="w-full h-full object-cover"
           />
         </div>
         
@@ -81,30 +81,20 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.5 }}
             className="space-y-4"
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white tracking-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white tracking-tight mb-6">
               José Zoilo
             </h1>
-            <div className="h-px w-24 bg-primary mx-auto my-6"></div>
             <p className="text-primary uppercase tracking-[0.3em] text-sm md:text-base font-medium">
               Cortador Profesional de Jamón
             </p>
           </motion.div>
         </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-20"
-        >
-          <span className="text-[10px] uppercase tracking-widest text-white/60">Descubrir</span>
-          <div className="w-px h-12 bg-gradient-to-b from-primary to-transparent"></div>
-        </motion.div>
+
       </section>
 
       {/* About Section - "The Silent Poetry" */}
-      <section className="py-32 px-6 md:px-12 bg-bg relative">
+      <section id="sobre-mi" className="py-32 px-6 md:px-12 bg-bg relative scroll-mt-24">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <span className="text-primary text-xs font-bold uppercase tracking-[0.2em]">Maestría & Tradición</span>
@@ -127,9 +117,9 @@ export default function Home() {
             </div>
           </div>
           <div className="relative">
-             <div className="aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000">
+             <div className="aspect-[3/4] overflow-hidden transition-all duration-1000">
               <img 
-                src="https://images.unsplash.com/photo-1588643884809-7d043d526732?q=80&w=1974&auto=format&fit=crop" 
+                src="https://i.postimg.cc/MpWXhHVD/image.png" 
                 alt="Arte del Corte" 
                 className="w-full h-full object-cover"
               />
@@ -142,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="servicios" className="py-24 px-6 md:px-12 bg-surface">
+      <section id="servicios" className="py-24 px-6 md:px-12 bg-surface scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <span className="text-primary text-xs font-bold uppercase tracking-[0.2em] block mb-4">Experiencias</span>
@@ -186,13 +176,16 @@ export default function Home() {
       {/* Star Product - Pack Gourmet */}
       <section className="py-32 px-6 md:px-12 bg-bg relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
-          <div className="order-2 md:order-1 relative group">
-            <div className="absolute inset-0 bg-primary/10 transform rotate-3 transition-transform group-hover:rotate-0 duration-500"></div>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-[1.2fr_1fr] gap-12 items-center relative z-10">
+          <div className="order-2 md:order-1 relative group flex justify-center">
             <img 
-              src="https://images.unsplash.com/photo-1619688031804-06637318357f?q=80&w=2070&auto=format&fit=crop" 
+              src="https://i.postimg.cc/Ls5wXcrg/Diseno-sin-titulo-(2).png" 
               alt="Pack Gourmet 100g" 
-              className="relative z-10 w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700 shadow-2xl"
+              className="relative z-10 w-full md:w-[120%] h-auto object-cover transition-all duration-700 shadow-2xl rounded-lg transform md:scale-110"
+              style={{
+                maskImage: 'radial-gradient(circle at center, black 50%, transparent 100%)',
+                WebkitMaskImage: 'radial-gradient(circle at center, black 50%, transparent 100%)'
+              }}
             />
           </div>
           <div className="order-1 md:order-2 space-y-8">
@@ -250,7 +243,7 @@ export default function Home() {
               <img 
                 src={img} 
                 alt="Gallery" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
               />
             </div>
           ))}
@@ -258,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contacto" className="py-32 px-6 md:px-12 bg-surface relative">
+      <section id="contacto" className="py-32 px-6 md:px-12 bg-surface relative scroll-mt-24">
         <div className="max-w-3xl mx-auto text-center space-y-12">
           <div className="space-y-4">
             <span className="text-primary text-xs font-bold uppercase tracking-[0.2em]">Contacto</span>
