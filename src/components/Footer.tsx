@@ -28,14 +28,14 @@ export default function Footer() {
                />
             </div>
             <p className="text-xs uppercase tracking-widest text-secondary mt-2 font-light">
-              © {new Date().getFullYear()} Maestros del Ibérico. Todos los derechos reservados.
+              © {new Date().getFullYear()} José Zoilo. Todos los derechos reservados.
             </p>
           </div>
           
           <div className="flex gap-6">
-            <a href="#" className="text-secondary hover:text-primary transition-colors"><Facebook size={20} /></a>
+            <a href="https://www.facebook.com/zoilopecellin" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors"><Facebook size={20} /></a>
             <a href="https://www.instagram.com/zoilopecellin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors"><Instagram size={20} /></a>
-            <a href="#" className="text-secondary hover:text-primary transition-colors"><Mail size={20} /></a>
+            <a href="mailto:zoilocortador@gmail.com" className="text-secondary hover:text-primary transition-colors"><Mail size={20} /></a>
           </div>
         </div>
       </div>

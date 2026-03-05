@@ -29,7 +29,6 @@ export default function TermsConditions() {
           <p>
             Los envíos se realizarán a la dirección indicada por el usuario. En caso de producto defectuoso, el usuario tendrá derecho a la devolución o sustitución del mismo.
           </p>
-          {/* Add more sections as needed */}
         </div>
       </motion.div>
     </div>

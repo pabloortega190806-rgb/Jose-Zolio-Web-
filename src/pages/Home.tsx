@@ -205,7 +205,10 @@ export default function Home() {
               </ul>
             </div>
             
-            <button className="bg-primary text-bg px-8 py-4 uppercase tracking-widest text-xs font-bold hover:bg-white transition-colors duration-300">
+            <button 
+              onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-primary text-bg px-8 py-4 uppercase tracking-widest text-xs font-bold hover:bg-white transition-colors duration-300"
+            >
               Solicitar Pedido
             </button>
           </div>
@@ -217,7 +220,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12 flex justify-between items-end">
           <div>
             <span className="text-primary text-xs font-bold uppercase tracking-[0.2em] block mb-2">Galería</span>
-            <h2 className="text-4xl font-serif text-text">La Dehesa y el Corte</h2>
+            <h2 className="text-4xl font-serif text-text">El Arte del Corte</h2>
           </div>
           <a href="https://www.instagram.com/zoilopecellin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 text-xs uppercase tracking-widest text-secondary hover:text-primary transition-colors">
             <Instagram size={16} />
@@ -272,23 +275,28 @@ export default function Home() {
             </a>
           </div>
 
-          <form className="space-y-6 text-left bg-bg p-8 md:p-12 border border-white/5 mt-12">
+          <form 
+            action="mailto:zoilocortador@gmail.com" 
+            method="post" 
+            enctype="text/plain"
+            className="space-y-6 text-left bg-bg p-8 md:p-12 border border-white/5 mt-12"
+          >
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-2">
                 <label className="text-xs uppercase tracking-widest text-secondary">Nombre</label>
-                <input type="text" className="w-full bg-transparent border-b border-white/10 focus:border-primary outline-none py-3 text-text transition-colors" />
+                <input type="text" name="nombre" required className="w-full bg-transparent border-b border-white/10 focus:border-primary outline-none py-3 text-text transition-colors" />
               </div>
               <div className="space-y-2">
                 <label className="text-xs uppercase tracking-widest text-secondary">Teléfono</label>
-                <input type="tel" className="w-full bg-transparent border-b border-white/10 focus:border-primary outline-none py-3 text-text transition-colors" />
+                <input type="tel" name="telefono" required className="w-full bg-transparent border-b border-white/10 focus:border-primary outline-none py-3 text-text transition-colors" />
               </div>
             </div>
             <div className="space-y-2">
               <label className="text-xs uppercase tracking-widest text-secondary">Mensaje</label>
-              <textarea rows={4} className="w-full bg-transparent border-b border-white/10 focus:border-primary outline-none py-3 text-text transition-colors resize-none"></textarea>
+              <textarea name="mensaje" rows={4} required className="w-full bg-transparent border-b border-white/10 focus:border-primary outline-none py-3 text-text transition-colors resize-none"></textarea>
             </div>
             <div className="pt-4">
-              <button className="w-full bg-white text-black py-4 uppercase tracking-widest text-xs font-bold hover:bg-primary hover:text-white transition-colors duration-300">
+              <button type="submit" className="w-full bg-white text-black py-4 uppercase tracking-widest text-xs font-bold hover:bg-primary hover:text-white transition-colors duration-300">
                 Enviar Solicitud
               </button>
             </div>
