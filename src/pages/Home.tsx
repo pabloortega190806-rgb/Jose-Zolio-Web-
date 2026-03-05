@@ -231,7 +231,7 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             "https://i.postimg.cc/6pw8BF1P/image.png",
-            "https://i.postimg.cc/yNKcrvR0/image.png",
+            "https://i.postimg.cc/vTpdtPBn/image.png",
             "https://i.postimg.cc/4Nw5tCH1/image.png",
             "https://i.postimg.cc/TPDFQHf0/image.png"
           ].map((img, i) => (
