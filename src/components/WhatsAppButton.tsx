@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 export default function WhatsAppButton() {
-  const phoneNumber = "34641529734";
+  const phoneNumber = "34696993822";
   const message = "Hola, me gustaría hacer un encargo o tengo una duda.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   const [showTooltip, setShowTooltip] = useState(false);
@@ -57,7 +57,18 @@ export default function WhatsAppButton() {
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 260, damping: 20 }}
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ 
+          scale: 1.1,
+          y: -8,
+          transition: { 
+            y: {
+              repeat: Infinity,
+              repeatType: "reverse",
+              duration: 0.4,
+              ease: "easeOut"
+            }
+          }
+        }}
         whileTap={{ scale: 0.9 }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

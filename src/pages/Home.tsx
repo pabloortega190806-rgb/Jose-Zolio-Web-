@@ -139,7 +139,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-serif text-text">Nuestros Servicios</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
+          <div className="grid md:grid-cols-2 gap-px bg-white/5 border border-white/5">
             {[
               {
                 title: "Eventos y Bodas",
@@ -152,12 +152,6 @@ export default function Home() {
                 subtitle: "Sobres de 100g",
                 desc: "La excelencia del ibérico, cortado a cuchillo y envasado al vacío para disfrutar en casa con la máxima frescura.",
                 icon: <Star className="w-8 h-8 text-primary mb-6" strokeWidth={1} />
-              },
-              {
-                title: "Masterclass",
-                subtitle: "Talleres de Corte",
-                desc: "Aprenda los secretos del corte, la anatomía del jamón y las técnicas de emplatado en nuestros talleres exclusivos.",
-                icon: <Clock className="w-8 h-8 text-primary mb-6" strokeWidth={1} />
               }
             ].map((service, index) => (
               <div key={index} className="bg-bg p-12 hover:bg-white/5 transition-colors duration-500 group">
@@ -225,25 +219,25 @@ export default function Home() {
             <span className="text-primary text-xs font-bold uppercase tracking-[0.2em] block mb-2">Galería</span>
             <h2 className="text-4xl font-serif text-text">La Dehesa y el Corte</h2>
           </div>
-          <a href="#" className="hidden md:flex items-center gap-2 text-xs uppercase tracking-widest text-secondary hover:text-primary transition-colors">
+          <a href="https://www.instagram.com/zoilopecellin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 text-xs uppercase tracking-widest text-secondary hover:text-primary transition-colors">
             <Instagram size={16} />
             Síguenos en Instagram
           </a>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            "https://images.unsplash.com/photo-1546173159-315724a31696?q=80&w=1974&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1516684669134-de6d7c47743b?q=80&w=1974&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1606214306048-a708a44d7429?q=80&w=1976&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1529564879024-c54e7c220e8b?q=80&w=2070&auto=format&fit=crop"
+            "https://i.postimg.cc/6pw8BF1P/image.png",
+            "https://i.postimg.cc/yNKcrvR0/image.png",
+            "https://i.postimg.cc/4Nw5tCH1/image.png",
+            "https://i.postimg.cc/TPDFQHf0/image.png"
           ].map((img, i) => (
-            <div key={i} className="aspect-square overflow-hidden group relative">
+            <div key={i} className={`aspect-[4/5] overflow-hidden group relative ${i === 0 ? 'bg-black' : ''}`}>
               <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 duration-500"></div>
               <img 
                 src={img} 
                 alt="Gallery" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                className={`w-full h-full transition-transform duration-700 group-hover:scale-110 ${i === 0 ? 'object-contain p-4' : 'object-cover'}`} 
               />
             </div>
           ))}
