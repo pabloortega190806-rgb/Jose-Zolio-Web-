@@ -1,10 +1,23 @@
 import { Facebook, Instagram, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <footer className="bg-bg border-t border-white/5 pt-20 pb-10 text-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 border-b border-white/5 pb-12">
+          <div>
+            <h4 className="font-serif text-lg mb-6 text-primary">Legal</h4>
+            <ul className="space-y-3 text-sm text-secondary font-light">
+              <li><Link to="/aviso-legal" className="hover:text-primary transition-colors">Aviso Legal</Link></li>
+              <li><Link to="/politica-privacidad" className="hover:text-primary transition-colors">Política de Privacidad</Link></li>
+              <li><Link to="/politica-cookies" className="hover:text-primary transition-colors">Política de Cookies</Link></li>
+              <li><Link to="/terminos-condiciones" className="hover:text-primary transition-colors">Términos y Condiciones</Link></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-col items-center md:items-start gap-1">
             <div className="flex items-center gap-2">
                <img 

@@ -19,6 +19,7 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Inicio', path: '/' },
     { name: 'Servicios', path: '#servicios' },
+    { name: 'Galería', path: '#galeria' },
     { name: 'El Maestro', path: '#sobre-mi' },
     { name: 'Contacto', path: '#contacto' },
   ];

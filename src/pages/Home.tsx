@@ -99,8 +99,8 @@ export default function Home() {
           <div className="space-y-8">
             <span className="text-primary text-xs font-bold uppercase tracking-[0.2em]">Maestría & Tradición</span>
             <h2 className="text-4xl md:text-6xl font-serif leading-[1.1] text-text">
-              El arte de la <br/>
-              <span className="italic text-primary">paciencia esencial</span>
+              El arte del <br/>
+              <span className="italic text-primary">Cortador Profesional de Jamón</span>
             </h2>
             <p className="text-secondary font-light leading-relaxed text-lg">
               Cortar un Jamón Ibérico de Bellota es ejecutar un ritual de respeto. Cada loncha es un lienzo translúcido que revela el marmoleado intrincado y la esencia de la dehesa. No es simplemente cortar; es desvelar un sabor que ha madurado durante años.
@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-24 bg-bg">
+      <section id="galeria" className="py-24 bg-bg scroll-mt-24">
         <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12 flex justify-between items-end">
           <div>
             <span className="text-primary text-xs font-bold uppercase tracking-[0.2em] block mb-2">Galería</span>
