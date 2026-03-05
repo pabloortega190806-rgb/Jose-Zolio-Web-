@@ -100,7 +100,7 @@ export default function Home() {
             <span className="text-primary text-xs font-bold uppercase tracking-[0.2em]">Maestría & Tradición</span>
             <h2 className="text-4xl md:text-6xl font-serif leading-[1.1] text-text">
               El arte del <br/>
-              <span className="italic text-primary">Cortador Profesional de Jamón</span>
+              <span className="italic text-primary inline-block mt-2">Cortador Profesional de Jamón</span>
             </h2>
             <p className="text-secondary font-light leading-relaxed text-lg">
               Cortar un Jamón Ibérico de Bellota es ejecutar un ritual de respeto. Cada loncha es un lienzo translúcido que revela el marmoleado intrincado y la esencia de la dehesa. No es simplemente cortar; es desvelar un sabor que ha madurado durante años.
