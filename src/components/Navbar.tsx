@@ -20,36 +20,41 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Inicio', path: '/' },
+    { name: 'Catálogo', path: '/catalogo' },
     { name: 'Servicios', path: '#servicios' },
     { name: 'Galería', path: '#galeria' },
     { name: 'El Maestro', path: '#sobre-mi' },
     { name: 'Contacto', path: '#contacto' },
   ];
 
-  const scrollToSection = (id: string) => {
+  const scrollToSection = (path: string) => {
     setIsMobileMenuOpen(false);
     
+    // Handle routes (starting with /)
+    if (path.startsWith('/')) {
+      if (location.pathname === path) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        navigate(path);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      return;
+    }
+
+    // Handle anchor links (starting with #)
     if (location.pathname !== '/') {
       navigate('/');
       // Wait for navigation to complete before scrolling
       setTimeout(() => {
-        if (id !== '/') {
-          const element = document.querySelector(id);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
-        } else {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+        const element = document.querySelector(path);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
         }
       }, 100);
       return;
     }
     
-    if (id === '/') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
-    const element = document.querySelector(id);
+    const element = document.querySelector(path);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }

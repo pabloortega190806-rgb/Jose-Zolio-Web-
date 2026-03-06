@@ -10,11 +10,20 @@ export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    // Show tooltip automatically after 2 seconds
-    const timer = setTimeout(() => {
+    // Show tooltip automatically after 3 seconds
+    const showTimer = setTimeout(() => {
       setShowTooltip(true);
-    }, 2000);
-    return () => clearTimeout(timer);
+    }, 3000);
+
+    // Hide tooltip automatically after 8 seconds (5 seconds visible)
+    const hideTimer = setTimeout(() => {
+      setShowTooltip(false);
+    }, 8000);
+
+    return () => {
+      clearTimeout(showTimer);
+      clearTimeout(hideTimer);
+    };
   }, []);
 
   return (
@@ -25,7 +34,7 @@ export default function WhatsAppButton() {
             initial={{ opacity: 0, y: 10, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.9 }}
-            className="bg-white text-gray-800 p-4 rounded-2xl shadow-xl max-w-[220px] relative border border-gray-100 pointer-events-auto mr-2"
+            className="bg-white text-gray-800 p-3 rounded-xl shadow-xl max-w-[200px] relative border border-gray-100 pointer-events-auto mr-2"
           >
             <button 
               onClick={(e) => {
@@ -35,16 +44,16 @@ export default function WhatsAppButton() {
               className="absolute -top-2 -left-2 bg-gray-100 text-gray-500 rounded-full p-1 hover:bg-gray-200 transition-colors shadow-sm"
               aria-label="Cerrar mensaje"
             >
-              <X size={14} />
+              <X size={12} />
             </button>
-            <p className="text-sm font-medium leading-snug">
+            <p className="text-xs font-medium leading-snug">
               ¡Hola! 👋 <br/>
-              <span className="text-gray-600 text-xs mt-1 block">
-                ¿Tienes alguna duda o quieres un encargo personalizado? ¡Escríbenos!
+              <span className="text-gray-600 text-[10px] mt-1 block">
+                ¿Alguna duda? ¡Escríbenos!
               </span>
             </p>
             {/* Arrow pointing to button */}
-            <div className="absolute -bottom-2 right-6 w-4 h-4 bg-white border-b border-r border-gray-100 transform rotate-45"></div>
+            <div className="absolute -bottom-2 right-5 w-3 h-3 bg-white border-b border-r border-gray-100 transform rotate-45"></div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -53,13 +62,13 @@ export default function WhatsAppButton() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="pointer-events-auto flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-2xl hover:bg-[#20bd5a] transition-all duration-300 relative group"
+        className="pointer-events-auto flex items-center justify-center w-12 h-12 bg-[#25D366] rounded-full shadow-2xl hover:bg-[#20bd5a] transition-all duration-300 relative group"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 260, damping: 20 }}
         whileHover={{ 
           scale: 1.1,
-          y: -8,
+          y: -4,
           transition: { 
             y: {
               repeat: Infinity,
@@ -79,8 +88,8 @@ export default function WhatsAppButton() {
         
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
-          width="36" 
-          height="36" 
+          width="24" 
+          height="24" 
           viewBox="0 0 24 24" 
           fill="white"
           className="fill-white relative z-10 drop-shadow-sm"
