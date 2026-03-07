@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
           
           <div className="flex gap-6">
-            <a href="https://www.facebook.com/zoilopecellin" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors"><Facebook size={20} /></a>
+            <a href="https://www.facebook.com/profile.php?id=100009924754590&locale=es_ES" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors"><Facebook size={20} /></a>
             <a href="https://www.instagram.com/zoilopecellin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors"><Instagram size={20} /></a>
             <a href="mailto:zoilocortador@gmail.com" className="text-secondary hover:text-primary transition-colors"><Mail size={20} /></a>
           </div>
