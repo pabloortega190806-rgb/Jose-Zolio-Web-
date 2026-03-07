@@ -131,38 +131,107 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Services Section - Eventos */}
       <section id="servicios" className="py-24 px-6 md:px-12 bg-surface scroll-mt-24">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <span className="text-primary text-xs font-bold uppercase tracking-[0.2em] block mb-4">Experiencias</span>
-            <h2 className="text-4xl md:text-5xl font-serif text-text">Nuestros Servicios</h2>
+          <div className="text-center mb-16">
+            <span className="text-primary text-xs font-bold uppercase tracking-[0.2em] block mb-4">Servicios Exclusivos</span>
+            <h2 className="text-4xl md:text-5xl font-serif text-text mb-8">El Arte del Corte</h2>
+            <div className="w-24 h-px bg-primary/50 mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-px bg-white/5 border border-white/5">
-            {[
-              {
-                title: "Eventos y Bodas",
-                subtitle: "Corte en Vivo",
-                desc: "Eleve su celebración con la presencia de un maestro cortador. Un espectáculo visual y gastronómico que cautiva a los invitados.",
-                icon: <Award className="w-8 h-8 text-primary mb-6" strokeWidth={1} />
-              },
-              {
-                title: "Pack Gourmet",
-                subtitle: "Sobres de 100g",
-                desc: "La excelencia del ibérico, cortado a cuchillo y envasado al vacío para disfrutar en casa con la máxima frescura.",
-                icon: <Star className="w-8 h-8 text-primary mb-6" strokeWidth={1} />
-              }
-            ].map((service, index) => (
-              <div key={index} className="bg-bg p-12 hover:bg-white/5 transition-colors duration-500 group">
-                {service.icon}
-                <h3 className="text-2xl font-serif text-text mb-2">{service.title}</h3>
-                <span className="text-xs uppercase tracking-widest text-primary block mb-6">{service.subtitle}</span>
-                <p className="text-secondary font-light leading-relaxed text-sm">
-                  {service.desc}
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            {/* Left Column: Description & Details */}
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-2xl font-serif text-white mb-4">De la Dehesa de Extremadura a su Mesa</h3>
+                <p className="text-secondary font-light leading-relaxed text-lg">
+                  Lleve a su evento la esencia de la Dehesa de Extremadura, un ecosistema único donde el respeto por la tradición y la naturaleza da como resultado el mejor jamón del mundo. En José Zoilo, no solo cortamos jamón; trasladamos el sabor auténtico de Monesterio, la ciudad del jamón, directamente a su celebración.
                 </p>
               </div>
-            ))}
+
+              <div>
+                <h3 className="text-2xl font-serif text-white mb-6">Seleccione la Calidad para su Evento</h3>
+                <p className="text-secondary font-light mb-6">
+                  Ofrecemos una propuesta flexible donde usted elige el nivel de exclusividad que desea para sus invitados. Puede aportar su propia pieza o confiar en nuestra selección directa de Extremadura:
+                </p>
+                
+                <div className="space-y-6">
+                  {[
+                    {
+                      title: "Jamón de Bellota 100% Ibérico",
+                      desc: "La máxima excelencia. Procedente de cerdos de pura raza alimentados exclusivamente con bellotas en libertad."
+                    },
+                    {
+                      title: "Jamón de Bellota Ibérico",
+                      desc: "Un equilibrio perfecto de sabor y jugosidad, fruto de la montanera en nuestras dehesas."
+                    },
+                    {
+                      title: "Jamón de Cebo de Campo Ibérico",
+                      desc: "Piezas de gran calidad procedentes de ejemplares criados al aire libre con alimentación natural."
+                    },
+                    {
+                      title: "Jamón de Cebo Ibérico",
+                      desc: "La opción ideal para disfrutar de la tradición ibérica con una excelente relación calidad-precio."
+                    }
+                  ].map((item, idx) => (
+                    <div key={idx} className="border-l-2 border-primary/30 pl-6 py-1">
+                      <h4 className="text-primary text-lg font-serif mb-1">{item.title}</h4>
+                      <p className="text-sm text-secondary font-light">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Experience & Budget */}
+            <div className="space-y-12 bg-white/5 p-8 md:p-12 border border-white/5 rounded-sm">
+              <div>
+                <div className="flex items-center gap-4 mb-4">
+                  <Award className="w-8 h-8 text-primary" strokeWidth={1} />
+                  <h3 className="text-2xl font-serif text-white">Un Espectáculo en Directo</h3>
+                </div>
+                <p className="text-secondary font-light leading-relaxed">
+                  Nuestro servicio de corte a cuchillo profesional asegura que cada loncha se sirva con la temperatura y el grosor óptimos, potenciando los matices de la infiltración grasa que solo el producto extremeño puede ofrecer.
+                </p>
+              </div>
+
+              <div className="w-full h-px bg-white/10"></div>
+
+              <div>
+                <div className="flex items-center gap-4 mb-4">
+                  <Star className="w-8 h-8 text-primary" strokeWidth={1} />
+                  <h3 className="text-2xl font-serif text-white">Personalice su presupuesto</h3>
+                </div>
+                <p className="text-secondary font-light leading-relaxed mb-8">
+                  El precio de nuestro servicio es tan exclusivo como su evento. Factores como el tipo de pieza elegida, el número de invitados y el desplazamiento se ajustan a sus necesidades particulares.
+                </p>
+                
+                <a 
+                  href="#contacto" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="inline-flex items-center gap-2 text-primary uppercase tracking-widest text-xs font-bold hover:text-white transition-colors"
+                >
+                  Solicitar Presupuesto <ArrowRight size={16} />
+                </a>
+              </div>
+
+              {/* Image or Decorative Element */}
+              <div className="mt-8 relative h-64 overflow-hidden rounded-sm opacity-80 grayscale hover:grayscale-0 transition-all duration-700">
+                <img 
+                  src="https://i.postimg.cc/MpWXhHVD/image.png" 
+                  alt="Corte en evento" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-white font-serif italic">Monesterio, Extremadura</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
