@@ -6,7 +6,7 @@ const products = [
     id: 1,
     name: "Lomo de Bellota 100% Ibérico",
     description: "La nobleza del ibérico. Disponible en pieza entera para regalar distinción, o loncheado para disfrutar de la inmediatez de su sabor.",
-    image: "https://i.postimg.cc/4Nw5tCH1/image.png",
+    image: "https://i.postimg.cc/sgF8D44Z/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado"]
   },
@@ -14,7 +14,7 @@ const products = [
     id: 2,
     name: "Chorizo Ibérico de Bellota",
     description: "Tradición y carácter. Pieza entera para los amantes del corte clásico, o loncheado para un aperitivo gourmet instantáneo.",
-    image: "https://i.postimg.cc/6pw8BF1P/image.png",
+    image: "https://i.postimg.cc/1zbVL4Qw/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado"]
   },
@@ -22,7 +22,7 @@ const products = [
     id: 3,
     name: "Salchichón Ibérico de Bellota",
     description: "Equilibrio y aroma. La pieza entera preserva su evolución en bodega; el formato loncheado ofrece la comodidad sin renunciar a la excelencia.",
-    image: "https://i.postimg.cc/vTpdtPBn/image.png",
+    image: "https://i.postimg.cc/K8kZCfvz/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado"]
   },
@@ -30,7 +30,7 @@ const products = [
     id: 4,
     name: "Queso Curado de Oveja",
     description: "Intensidad y textura. Piezas enteras para una conservación prolongada o loncheado listo para servir en su mesa.",
-    image: "https://i.postimg.cc/TPDFQHf0/image.png",
+    image: "https://i.postimg.cc/Prfbbpf4/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado"]
   },
