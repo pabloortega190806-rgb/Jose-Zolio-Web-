@@ -6,7 +6,7 @@ const products = [
     id: 1,
     name: "Lomo Ibérico",
     description: "La nobleza del ibérico. Disponible en pieza entera para regalar distinción, o loncheado para disfrutar de la inmediatez de su sabor.",
-    image: "https://i.postimg.cc/sgF8D44Z/image.png",
+    image: "https://i.postimg.cc/XNktzGMn/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado"]
   },
@@ -14,7 +14,7 @@ const products = [
     id: 2,
     name: "Chorizo Ibérico",
     description: "Tradición y carácter. Pieza entera para los amantes del corte clásico, o loncheado para un aperitivo gourmet instantáneo.",
-    image: "https://i.postimg.cc/1zbVL4Qw/image.png",
+    image: "https://i.postimg.cc/HWrBQrpQ/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado"]
   },
