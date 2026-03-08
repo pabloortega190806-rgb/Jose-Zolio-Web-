@@ -41,14 +41,6 @@ const products = [
     image: "https://i.postimg.cc/6pw8BF1P/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado a cuchillo"]
-  },
-  {
-    id: 6,
-    name: "Servicio de Corte Profesional",
-    description: "Servicio exclusivo de corte a cuchillo para eventos, bodas y celebraciones.",
-    image: "https://i.postimg.cc/TPDFQHf0/image.png",
-    price: "Desde 150€",
-    formats: ["Eventos", "Bodas"]
   }
 ];
 

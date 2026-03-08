@@ -103,16 +103,14 @@ export default function Home() {
               <span className="italic text-primary inline-block mt-10">Cortador de Jamón Profesional</span>
             </h2>
             <p className="text-secondary font-light leading-relaxed text-lg">
-              Cortar un Jamón Ibérico de Bellota es ejecutar un ritual de respeto. Cada loncha es un lienzo translúcido que revela el marmoleado intrincado y la esencia de la dehesa. No es simplemente cortar; es desvelar un sabor que ha madurado durante años.
+              Cortar un Jamón es ejecutar un ritual de respeto. Cada loncha es un lienzo translúcido que revela el marmoleado intrincado y la esencia de la dehesa. No es simplemente cortar; es desvelar un sabor que ha madurado durante años.
             </p>
-            <div className="grid grid-cols-2 gap-8 pt-4">
+            <div className="pt-4">
               <div>
                 <h4 className="text-primary text-sm font-bold uppercase tracking-widest mb-2">Precisión</h4>
-                <p className="text-xs text-secondary leading-relaxed">Lonchas tan finas que se disuelven al contacto, liberando pura intensidad oleica.</p>
-              </div>
-              <div>
-                <h4 className="text-primary text-sm font-bold uppercase tracking-widest mb-2">Temperatura</h4>
-                <p className="text-xs text-secondary leading-relaxed">Manejado con cuidado quirúrgico para preservar las grasas delicadas.</p>
+                <p className="text-xs text-secondary leading-relaxed">
+                  Lonchas tan finas que se disuelven al contacto, liberando pura intensidad. Manejado con cuidado quirúrgico para preservar las grasas delicadas.
+                </p>
               </div>
             </div>
           </div>
@@ -146,7 +144,7 @@ export default function Home() {
               <div>
                 <h3 className="text-2xl font-serif text-white mb-4">De la Dehesa de Extremadura a su Mesa</h3>
                 <p className="text-secondary font-light leading-relaxed text-lg">
-                  Lleve a su evento la esencia de la Dehesa de Extremadura, un ecosistema único donde el respeto por la tradición y la naturaleza da como resultado el mejor jamón del mundo. En José Zoilo, no solo cortamos jamón; trasladamos el sabor auténtico de Monesterio, la ciudad del jamón, directamente a su celebración.
+                  Lleve a su evento la esencia de la Dehesa de Extremadura, un ecosistema único donde el respeto por la tradición y la naturaleza da como resultado un jamón de carácter inigualable y sabor extraordinario. En José Zoilo, no solo cortamos jamón; trasladamos el sabor auténtico de Monesterio, conocido por la excelencia de su jamón, directamente a su celebración.
                 </p>
               </div>
 
@@ -222,7 +220,7 @@ export default function Home() {
               {/* Image or Decorative Element */}
               <div className="mt-8 relative h-64 overflow-hidden rounded-sm opacity-80 grayscale hover:grayscale-0 transition-all duration-700">
                 <img 
-                  src="https://i.postimg.cc/MpWXhHVD/image.png" 
+                  src="https://i.postimg.cc/L4gFh0LR/image.png" 
                   alt="Corte en evento" 
                   className="w-full h-full object-cover"
                 />
