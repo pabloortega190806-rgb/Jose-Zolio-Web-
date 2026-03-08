@@ -107,10 +107,10 @@ export default function Catalogue() {
               <img 
                 src={product.image} 
                 alt={product.name}
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none" />
             </div>
             
             <div className="p-8">

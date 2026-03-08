@@ -187,10 +187,13 @@ export default function Home() {
               <div>
                 <div className="flex items-center gap-4 mb-4">
                   <Award className="w-8 h-8 text-primary" strokeWidth={1} />
-                  <h3 className="text-2xl font-serif text-white">Un Espectáculo en Directo</h3>
+                  <div>
+                    <h3 className="text-2xl font-serif text-white">Eventos</h3>
+                    <span className="text-primary text-xs font-bold uppercase tracking-widest block mt-1">CORTE EN VIVO</span>
+                  </div>
                 </div>
                 <p className="text-secondary font-light leading-relaxed">
-                  Nuestro servicio de corte a cuchillo profesional asegura que cada loncha se sirva con la temperatura y el grosor óptimos, potenciando los matices de la infiltración grasa que solo el producto extremeño puede ofrecer.
+                  Eleve su celebración con la presencia de un maestro cortador. Un espectáculo visual y gastronómico que cautiva a los asistentes.
                 </p>
               </div>
 
@@ -199,10 +202,13 @@ export default function Home() {
               <div>
                 <div className="flex items-center gap-4 mb-4">
                   <Star className="w-8 h-8 text-primary" strokeWidth={1} />
-                  <h3 className="text-2xl font-serif text-white">Personalice su presupuesto</h3>
+                  <div>
+                    <h3 className="text-2xl font-serif text-white">Pack Gourmet</h3>
+                    <span className="text-primary text-xs font-bold uppercase tracking-widest block mt-1">SOBRES</span>
+                  </div>
                 </div>
                 <p className="text-secondary font-light leading-relaxed mb-8">
-                  El precio de nuestro servicio es tan exclusivo como su evento. Factores como el tipo de pieza elegida, el número de invitados y el desplazamiento se ajustan a sus necesidades particulares.
+                  La excelencia del ibérico, cortado a cuchillo y envasado al vacío para disfrutar en cualquier lugar con la misma frescura.
                 </p>
                 
                 <a 
@@ -241,7 +247,7 @@ export default function Home() {
           <div className="order-2 md:order-1 relative group flex justify-center">
             <img 
               src="https://i.postimg.cc/Ls5wXcrg/Diseno-sin-titulo-(2).png" 
-              alt="Pack Gourmet 100g" 
+              alt="Pack Gourmet" 
               className="relative z-10 w-full md:w-[120%] h-auto object-cover transition-all duration-700 shadow-2xl rounded-lg transform md:scale-110"
               style={{
                 maskImage: 'radial-gradient(circle at center, black 50%, transparent 100%)',
@@ -253,7 +259,7 @@ export default function Home() {
             <div className="inline-block border border-primary px-4 py-1 rounded-full">
               <span className="text-primary text-xs font-bold uppercase tracking-widest">Producto Estrella</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-serif text-text">Pack Gourmet <br/><span className="text-primary italic">100g</span></h2>
+            <h2 className="text-5xl md:text-6xl font-serif text-text">Pack Gourmet</h2>
             <p className="text-secondary text-lg font-light leading-relaxed">
               La esencia pura del jamón, lista para consumir. Cortado a mano en el momento óptimo de curación y envasado para preservar cada matiz de sabor.
             </p>
@@ -267,7 +273,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3 text-sm text-secondary">
                   <div className="w-5 h-5 flex items-center justify-center text-primary shrink-0 font-serif font-bold">°C</div>
-                  <span>Servir a una temperatura ideal entre <strong>0°C y 7°C</strong>.</span>
+                  <span>Servir a una temperatura ideal entre <strong>20°C y 25°C</strong> (temperatura ambiente).</span>
                 </li>
               </ul>
             </div>
