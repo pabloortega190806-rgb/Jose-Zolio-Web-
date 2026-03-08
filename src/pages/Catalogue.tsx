@@ -7,7 +7,7 @@ const products = [
     name: "Lomo Ibérico",
     description: "La nobleza del ibérico. Disponible en pieza entera para regalar distinción, o loncheado para disfrutar de la inmediatez de su sabor.",
     image: "https://i.postimg.cc/XNktzGMn/image.png",
-    price: "Consultar",
+    price: "Próximamente",
     formats: ["Pieza entera", "Loncheado"]
   },
   {
@@ -15,7 +15,7 @@ const products = [
     name: "Chorizo Ibérico",
     description: "Tradición y carácter. Pieza entera para los amantes del corte clásico, o loncheado para un aperitivo gourmet instantáneo.",
     image: "https://i.postimg.cc/HWrBQrpQ/image.png",
-    price: "Consultar",
+    price: "Próximamente",
     formats: ["Pieza entera", "Loncheado"]
   },
   {
@@ -23,7 +23,7 @@ const products = [
     name: "Salchichón Ibérico",
     description: "Equilibrio y aroma. La pieza entera preserva su evolución en bodega; el formato loncheado ofrece la comodidad sin renunciar a la excelencia.",
     image: "https://i.postimg.cc/C59htztv/image.png",
-    price: "Consultar",
+    price: "Próximamente",
     formats: ["Pieza entera", "Loncheado"]
   },
   {
@@ -31,7 +31,7 @@ const products = [
     name: "Queso Curado de Oveja",
     description: "Intensidad y textura. Piezas enteras para una conservación prolongada o loncheado listo para servir en su mesa.",
     image: "https://i.postimg.cc/Y91zjWNm/image.png",
-    price: "Consultar",
+    price: "Próximamente",
     formats: ["Pieza entera", "Loncheado"]
   },
   {
@@ -39,7 +39,7 @@ const products = [
     name: "Jamón Ibérico",
     description: "La joya de la corona. Procedente de cerdos criados en libertad y alimentados con los mejores pastos.",
     image: "https://i.postimg.cc/2j4tMqWR/image.png",
-    price: "Consultar",
+    price: "Próximamente",
     formats: ["Pieza entera", "Loncheado a cuchillo"]
   }
 ];
@@ -130,15 +130,13 @@ export default function Catalogue() {
               )}
               
               <div className="flex items-center justify-between mt-auto">
-                <span className="text-white font-medium">{product.price}</span>
-                <a 
-                  href={`https://wa.me/34696993822?text=Hola, estoy interesado en: ${product.name}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-xs uppercase tracking-widest text-primary hover:text-white transition-colors font-bold"
+                <span className="text-primary font-medium">{product.price}</span>
+                <button 
+                  disabled
+                  className="flex items-center gap-2 text-xs uppercase tracking-widest text-white/50 cursor-not-allowed font-bold"
                 >
-                  Solicitar <ArrowRight size={14} />
-                </a>
+                  Disponible Pronto
+                </button>
               </div>
             </div>
           </motion.div>
