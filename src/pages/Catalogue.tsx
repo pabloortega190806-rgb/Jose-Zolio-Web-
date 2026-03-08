@@ -38,7 +38,7 @@ const products = [
     id: 5,
     name: "Jamón Ibérico",
     description: "La joya de la corona. Procedente de cerdos criados en libertad y alimentados con los mejores pastos.",
-    image: "https://i.postimg.cc/6pw8BF1P/image.png",
+    image: "https://i.postimg.cc/2j4tMqWR/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado a cuchillo"]
   }
@@ -70,7 +70,7 @@ export default function Catalogue() {
           >
             <div className="relative z-10 overflow-hidden rounded-sm">
               <img 
-                src="https://i.postimg.cc/h4d2FRR3/image.png" 
+                src="https://i.postimg.cc/Jh4ZQFW2/image.png" 
                 alt="Catálogo Portada" 
                 className="w-full h-auto shadow-2xl"
                 referrerPolicy="no-referrer"
