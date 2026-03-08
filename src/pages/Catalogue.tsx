@@ -4,7 +4,7 @@ import { ShoppingBag, ArrowRight } from 'lucide-react';
 const products = [
   {
     id: 1,
-    name: "Lomo de Bellota 100% Ibérico",
+    name: "Lomo Ibérico",
     description: "La nobleza del ibérico. Disponible en pieza entera para regalar distinción, o loncheado para disfrutar de la inmediatez de su sabor.",
     image: "https://i.postimg.cc/sgF8D44Z/image.png",
     price: "Consultar",
@@ -12,7 +12,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Chorizo Ibérico de Bellota",
+    name: "Chorizo Ibérico",
     description: "Tradición y carácter. Pieza entera para los amantes del corte clásico, o loncheado para un aperitivo gourmet instantáneo.",
     image: "https://i.postimg.cc/1zbVL4Qw/image.png",
     price: "Consultar",
@@ -20,9 +20,9 @@ const products = [
   },
   {
     id: 3,
-    name: "Salchichón Ibérico de Bellota",
+    name: "Salchichón Ibérico",
     description: "Equilibrio y aroma. La pieza entera preserva su evolución en bodega; el formato loncheado ofrece la comodidad sin renunciar a la excelencia.",
-    image: "https://i.postimg.cc/K8kZCfvz/image.png",
+    image: "https://i.postimg.cc/C59htztv/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado"]
   },
@@ -30,14 +30,14 @@ const products = [
     id: 4,
     name: "Queso Curado de Oveja",
     description: "Intensidad y textura. Piezas enteras para una conservación prolongada o loncheado listo para servir en su mesa.",
-    image: "https://i.postimg.cc/Prfbbpf4/image.png",
+    image: "https://i.postimg.cc/Y91zjWNm/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado"]
   },
   {
     id: 5,
-    name: "Jamón de Bellota 100% Ibérico",
-    description: "La joya de la corona. Procedente de cerdos criados en libertad y alimentados exclusivamente con bellotas.",
+    name: "Jamón Ibérico",
+    description: "La joya de la corona. Procedente de cerdos criados en libertad y alimentados con los mejores pastos.",
     image: "https://i.postimg.cc/6pw8BF1P/image.png",
     price: "Consultar",
     formats: ["Pieza entera", "Loncheado a cuchillo"]
@@ -107,7 +107,7 @@ export default function Catalogue() {
               <img 
                 src={product.image} 
                 alt={product.name}
-                className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300 pointer-events-none" />
