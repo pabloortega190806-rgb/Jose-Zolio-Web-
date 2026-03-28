@@ -38,6 +38,12 @@ export default function Footer() {
             <a href="mailto:zoilocortador@gmail.com" className="text-secondary hover:text-primary transition-colors"><Mail size={20} /></a>
           </div>
         </div>
+
+        <div className="mt-12 pt-8 border-t border-white/5 text-center">
+          <p className="text-[10px] uppercase tracking-[0.3em] text-secondary/60 font-light">
+            Web creada por <a href="https://www.zentioweb.com" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-primary transition-colors duration-300 font-medium">Zentio Studio</a>
+          </p>
+        </div>
       </div>
     </footer>
   );
