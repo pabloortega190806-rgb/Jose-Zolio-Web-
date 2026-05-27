@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Catalogue from './pages/Catalogue';
+import Blog from './pages/Blog';
 import LegalNotice from './pages/LegalNotice';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import CookiesPolicy from './pages/CookiesPolicy';
@@ -22,6 +23,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalogo" element={<Catalogue />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/aviso-legal" element={<LegalNotice />} />
             <Route path="/politica-privacidad" element={<PrivacyPolicy />} />
             <Route path="/politica-cookies" element={<CookiesPolicy />} />

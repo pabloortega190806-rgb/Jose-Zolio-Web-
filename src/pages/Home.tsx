@@ -351,7 +351,7 @@ export default function Home() {
           <form 
             action="mailto:zoilocortador@gmail.com" 
             method="post" 
-            enctype="text/plain"
+            encType="text/plain"
             className="space-y-6 text-left bg-bg p-8 md:p-12 border border-white/5 mt-12"
           >
             <div className="grid md:grid-cols-2 gap-8">
