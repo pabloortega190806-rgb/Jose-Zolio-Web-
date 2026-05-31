@@ -11,6 +11,7 @@ import CookiesPolicy from './pages/CookiesPolicy';
 import TermsConditions from './pages/TermsConditions';
 import ScrollToTop from './components/ScrollToTop';
 import WhatsAppButton from './components/WhatsAppButton';
+import MusicPlayer from './components/MusicPlayer';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-bg text-text font-sans selection:bg-primary/20 selection:text-primary-dark">
         <Navbar />
+        <MusicPlayer />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
